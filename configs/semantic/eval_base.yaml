@@ -1,0 +1,17 @@
+# python train_net.py --config-file configs/semantic/eval.yaml  --num-gpus 8 --eval-only
+
+_BASE_: ./train_semantic_base.yaml
+MODEL:
+  WEIGHTS: out/semantic/MAFT_Plus/maftp_b.pth  # path to maftp_l.pth
+  META_ARCHITECTURE: "MAFT_Plus"
+  FC_CLIP:
+    CLIP_MODEL_NAME: "convnext_base_w_320"  
+    CLIP_PRETRAINED_WEIGHTS: "laion_aesthetic_s13b_b82k_augreg" 
+    EMBED_DIM: 640
+    GEOMETRIC_ENSEMBLE_ALPHA: -1.
+    GEOMETRIC_ENSEMBLE_BETA: -1.
+
+DATASETS:
+  TEST: ("openvocab_pascal20_sem_seg_val", "openvocab_ade20k_full_sem_seg_val", 'openvocab_pascal_ctx459_sem_seg_val', 'openvocab_pascal_ctx59_sem_seg_val', 'openvocab_ade20k_panoptic_val') 
+
+OUTPUT_DIR: ./out/semantic/evaluation_base

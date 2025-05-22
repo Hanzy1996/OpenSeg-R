@@ -1,0 +1,25 @@
+_BASE_: ./train_semantic_large.yaml
+MODEL:
+  WEIGHTS: ./pretrained/maftp_l.pth  # path to maftp_l.pth
+  META_ARCHITECTURE: "MAFT_Plus_Reason"
+  TEST_CLASS_REASON_JSON: "reason_data/general_reason/coco_class_des.json"
+  REASON_DIR: "reason_data/image_reason/Qwen2.5-VL-72B-Instruct-AWQ"
+  REASON_DATA: "coco-stuff"
+  NUM_DES: 3
+  CLIP_TYPE: "Convnext-L"
+  CLASS_NAME_JSON: "dataset_cat/ade150.json"
+  SEM_SEG_HEAD:
+    NAME: "FCCLIPHead_Reason"
+  MASK_FORMER:
+    TRANSFORMER_DECODER_NAME: "MultiScaleMaskedTransformerDecoder_Reason"
+  FC_CLIP:
+    CLIP_MODEL_NAME: "convnext_large_d_320"  
+    CLIP_PRETRAINED_WEIGHTS: "laion2b_s29b_b131k_ft_soup" 
+    EMBED_DIM: 768
+    GEOMETRIC_ENSEMBLE_ALPHA: -1.
+    GEOMETRIC_ENSEMBLE_BETA: -1.
+
+DATASETS:
+  TEST: ('openvocab_pascal_ctx459_sem_seg_val', ) 
+
+OUTPUT_DIR: ./out/semantic/evaluation_large

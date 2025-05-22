@@ -1,0 +1,715 @@
+{
+    "aeroplane": {
+        "raw_response": "A1: This object belongs to [vehicle]. \nA2: This 'vehicle' is [aircraft]. \nA3: This 'aircraft' 'vehicle' can be recognized as aeroplane because it contains visual attributes: [wings, fuselage, propeller or jet engines, tail assembly, landing gear].",
+        "general_category": "vehicle",
+        "sub_category": "aircraft",
+        "class_des": [
+            "wings",
+            "fuselage",
+            "propeller or jet engines",
+            "tail assembly",
+            "landing gear"
+        ]
+    },
+    "bag": {
+        "raw_response": "A1: This object belongs to [accessories].\nA2: This 'accessories' is [carry item].\nA3: This 'carry item' 'accessories' can be recognized as bag because it contains visual attributes: [fabric material, handle or strap, closure mechanism, variable size and shape, portable design].",
+        "general_category": "accessories",
+        "sub_category": "carry item",
+        "class_des": [
+            "fabric material",
+            "handle or strap",
+            "closure mechanism",
+            "variable size and shape",
+            "portable design"
+        ]
+    },
+    "bed": {
+        "raw_response": "A1: This object belongs to [furniture].\nA2: This 'furniture' is [sleeping item].\nA3: This 'sleeping item' 'furniture' can be recognized as bed because it contains visual attributes: [large flat surface, headboard, mattress, frame, pillows].",
+        "general_category": "furniture",
+        "sub_category": "sleeping item",
+        "class_des": [
+            "large flat surface",
+            "headboard",
+            "mattress",
+            "frame",
+            "pillows"
+        ]
+    },
+    "bedclothes": {
+        "raw_response": "A1: This object belongs to [home textiles]. \nA2: This 'home textiles' is [bedding]. \nA3: This 'bedding' 'home textiles' can be recognized as bedclothes because it contains visual attributes: [soft fabric, varied patterns, layered appearance, rectangular shapes, multiple colors].",
+        "general_category": "home textiles",
+        "sub_category": "bedding",
+        "class_des": [
+            "soft fabric",
+            "varied patterns",
+            "layered appearance",
+            "rectangular shapes",
+            "multiple colors"
+        ]
+    },
+    "bench": {
+        "raw_response": "A1: This object belongs to [furniture]. \nA2: This 'furniture' is [seating item]. \nA3: This 'seating item' 'furniture' can be recognized as bench because it contains visual attributes: [typically longer and straight, often without back or armrests, usually placed outdoors or in public spaces, made of materials like wood or metal, designed for multiple people to sit together].",
+        "general_category": "furniture",
+        "sub_category": "seating item",
+        "class_des": [
+            "typically longer and straight",
+            "often without back or armrests",
+            "usually placed outdoors or in public spaces",
+            "made of materials like wood or metal",
+            "designed for multiple people to sit together"
+        ]
+    },
+    "bicycle": {
+        "raw_response": "A1: This object belongs to [vehicle]. \nA2: This 'vehicle' is [two-wheeled vehicle]. \nA3: This 'two-wheeled vehicle' 'vehicle' can be recognized as bicycle because it contains visual attributes: [two wheels, handlebars, seat, pedals, frame].",
+        "general_category": "vehicle",
+        "sub_category": "two-wheeled vehicle",
+        "class_des": [
+            "two wheels",
+            "handlebars",
+            "seat",
+            "pedals",
+            "frame"
+        ]
+    },
+    "bird": {
+        "raw_response": "A1: This object belongs to [animal].\nA2: This 'animal' is [avian creature].\nA3: This 'avian creature' 'animal' can be recognized as bird because it contains visual attributes: [feathers, beak, wings, two legs, ability to perch or fly].",
+        "general_category": "animal",
+        "sub_category": "avian creature",
+        "class_des": [
+            "feathers",
+            "beak",
+            "wings",
+            "two legs",
+            "ability to perch or fly"
+        ]
+    },
+    "boat": {
+        "raw_response": "A1: This object belongs to [vehicle]. \nA2: This 'vehicle' is [watercraft]. \nA3: This 'watercraft' 'vehicle' can be recognized as boat because it contains visual attributes: [hull shape, presence of a deck, propulsion method, size relative to surrounding water, presence of masts or sails].",
+        "general_category": "vehicle",
+        "sub_category": "watercraft",
+        "class_des": [
+            "hull shape",
+            "presence of a deck",
+            "propulsion method",
+            "size relative to surrounding water",
+            "presence of masts or sails"
+        ]
+    },
+    "book": {
+        "raw_response": "A1: This object belongs to [item].  \nA2: This 'item' is [reading material].  \nA3: This 'reading material' 'item' can be recognized as book because it contains visual attributes: [rectangular shape, bound edges, printed text, cover design, paper texture].",
+        "general_category": "item",
+        "sub_category": "reading material",
+        "class_des": [
+            "rectangular shape",
+            "bound edges",
+            "printed text",
+            "cover design",
+            "paper texture"
+        ]
+    },
+    "bottle": {
+        "raw_response": "A1: This object belongs to [container]. \nA2: This 'container' is [drinking vessel]. \nA3: This 'drinking vessel' 'container' can be recognized as bottle because it contains visual attributes: [cylindrical shape, narrow neck, smooth surface, sealed top, transparent or opaque material].",
+        "general_category": "container",
+        "sub_category": "drinking vessel",
+        "class_des": [
+            "cylindrical shape",
+            "narrow neck",
+            "smooth surface",
+            "sealed top",
+            "transparent or opaque material"
+        ]
+    },
+    "building": {
+        "raw_response": "A1: This object belongs to [structure]. \nA2: This 'structure' is [architectural building]. \nA3: This 'architectural building' 'structure' can be recognized as building because it contains visual attributes: [rectangular shape, multiple stories, windows, solid foundation, diverse materials].",
+        "general_category": "structure",
+        "sub_category": "architectural building",
+        "class_des": [
+            "rectangular shape",
+            "multiple stories",
+            "windows",
+            "solid foundation",
+            "diverse materials"
+        ]
+    },
+    "bus": {
+        "raw_response": "A1: This object belongs to [vehicle].\nA2: This 'vehicle' is [land transport].\nA3: This 'land transport' 'vehicle' can be recognized as bus because it contains visual attributes: [large size, rectangular shape, multiple rows of windows, flat front and back ends, presence of a door on the side].",
+        "general_category": "vehicle",
+        "sub_category": "land transport",
+        "class_des": [
+            "large size",
+            "rectangular shape",
+            "multiple rows of windows",
+            "flat front and back ends",
+            "presence of a door on the side"
+        ]
+    },
+    "cabinet": {
+        "raw_response": "A1: This object belongs to [furniture]. \nA2: This 'furniture' is [storage item]. \nA3: This 'storage item' 'furniture' can be recognized as cabinet because it contains visual attributes: [rectangular shape, multiple doors, flat top surface, closed compartments, wood or metal material].",
+        "general_category": "furniture",
+        "sub_category": "storage item",
+        "class_des": [
+            "rectangular shape",
+            "multiple doors",
+            "flat top surface",
+            "closed compartments",
+            "wood or metal material"
+        ]
+    },
+    "car": {
+        "raw_response": "A1: This object belongs to [vehicle].\nA2: This 'vehicle' is [automobile].\nA3: This 'automobile' 'vehicle' can be recognized as car because it contains visual attributes: [four wheels, enclosed body, front and rear lights, steering wheel, seats for passengers].",
+        "general_category": "vehicle",
+        "sub_category": "automobile",
+        "class_des": [
+            "four wheels",
+            "enclosed body",
+            "front and rear lights",
+            "steering wheel",
+            "seats for passengers"
+        ]
+    },
+    "cat": {
+        "raw_response": "A1: This object belongs to [animal]. \nA2: This 'animal' is [mammal]. \nA3: This 'mammal' 'animal' can be recognized as cat because it contains visual attributes: [fur, whiskers, pointed ears, tail, eyes with vertical pupils].",
+        "general_category": "animal",
+        "sub_category": "mammal",
+        "class_des": [
+            "fur",
+            "whiskers",
+            "pointed ears",
+            "tail",
+            "eyes with vertical pupils"
+        ]
+    },
+    "ceiling": {
+        "raw_response": "A1: This object belongs to [architecture]. \nA2: This 'architecture' is [interior feature]. \nA3: This 'interior feature' 'architecture' can be recognized as ceiling because it contains visual attributes: [high position in the room, flat or slightly curved surface, often lighter in color compared to walls, presence of lighting fixtures, varied textures such as smooth, painted, or paneled].",
+        "general_category": "architecture",
+        "sub_category": "interior feature",
+        "class_des": [
+            "high position in the room",
+            "flat or slightly curved surface",
+            "often lighter in color compared to walls",
+            "presence of lighting fixtures",
+            "varied textures such as smooth",
+            "painted",
+            "or paneled"
+        ]
+    },
+    "chair": {
+        "raw_response": "A1: This object belongs to [furniture]. \nA2: This 'furniture' is [seating item]. \nA3: This 'seating item' 'furniture' can be recognized as chair because it contains visual attributes: [single seat, backrest, four legs, armrests, portable design].",
+        "general_category": "furniture",
+        "sub_category": "seating item",
+        "class_des": [
+            "single seat",
+            "backrest",
+            "four legs",
+            "armrests",
+            "portable design"
+        ]
+    },
+    "cloth": {
+        "raw_response": "A1: This object belongs to [textile materials].\nA2: This 'textile material' is [fabric].\nA3: This 'fabric' 'textile material' can be recognized as cloth because it contains visual attributes: [soft texture, flexible structure, woven or knitted pattern, varied colors, smooth surface].",
+        "general_category": "textile materials",
+        "sub_category": "fabric",
+        "class_des": [
+            "soft texture",
+            "flexible structure",
+            "woven or knitted pattern",
+            "varied colors",
+            "smooth surface"
+        ]
+    },
+    "computer": {
+        "raw_response": "A1: This object belongs to [electronic devices]. \nA2: This 'electronic device' is [computing equipment]. \nA3: This 'computing equipment' 'electronic device' can be recognized as computer because it contains visual attributes: [rectangular screen, keyboard with alphanumeric keys, mouse, ports and connectors, presence of a processing unit or tower].",
+        "general_category": "electronic devices",
+        "sub_category": "computing equipment",
+        "class_des": [
+            "rectangular screen",
+            "keyboard with alphanumeric keys",
+            "mouse",
+            "ports and connectors",
+            "presence of a processing unit or tower"
+        ]
+    },
+    "cow": {
+        "raw_response": "A1: This object belongs to [animal]. \nA2: This 'animal' is [mammal]. \nA3: This 'mammal' 'animal' can be recognized as cow because it contains visual attributes: [large body size, distinctive black and white or brown patches, udder, horns, and long tail].",
+        "general_category": "animal",
+        "sub_category": "mammal",
+        "class_des": [
+            "large body size",
+            "distinctive black and white or brown patches",
+            "udder",
+            "horns",
+            "and long tail"
+        ]
+    },
+    "cup": {
+        "raw_response": "A1: This object belongs to [kitchenware]. \nA2: This 'kitchenware' is [drinking vessel]. \nA3: This 'drinking vessel' 'kitchenware' can be recognized as cup because it contains visual attributes: [small size, cylindrical or conical shape, handle, smooth surface, often white or light-colored].",
+        "general_category": "kitchenware",
+        "sub_category": "drinking vessel",
+        "class_des": [
+            "small size",
+            "cylindrical or conical shape",
+            "handle",
+            "smooth surface",
+            "often white or light-colored"
+        ]
+    },
+    "curtain": {
+        "raw_response": "A1: This object belongs to [home decor]. \nA2: This 'home decor' is [window covering]. \nA3: This 'window covering' 'home decor' can be recognized as curtain because it contains visual attributes: [fabric material, hanging vertically, often paired with rods or tracks, varies in length to cover windows, available in various colors and patterns].",
+        "general_category": "home decor",
+        "sub_category": "window covering",
+        "class_des": [
+            "fabric material",
+            "hanging vertically",
+            "often paired with rods or tracks",
+            "varies in length to cover windows",
+            "available in various colors and patterns"
+        ]
+    },
+    "dog": {
+        "raw_response": "A1: This object belongs to [animal].\nA2: This 'animal' is [mammal].\nA3: This 'mammal' 'animal' can be recognized as dog because it contains visual attributes: [fur, four legs, tail, snout, ears].",
+        "general_category": "animal",
+        "sub_category": "mammal",
+        "class_des": [
+            "fur",
+            "four legs",
+            "tail",
+            "snout",
+            "ears"
+        ]
+    },
+    "door": {
+        "raw_response": "A1: This object belongs to [building elements].\nA2: This 'building element' is [entry/exit point].\nA3: This 'entry/exit point' 'building element' can be recognized as door because it contains visual attributes: [rectangular shape, hinged mechanism, handle or knob, solid or paneled surface, often framed by a doorway].",
+        "general_category": "building elements",
+        "sub_category": "entry/exit point",
+        "class_des": [
+            "rectangular shape",
+            "hinged mechanism",
+            "handle or knob",
+            "solid or paneled surface",
+            "often framed by a doorway"
+        ]
+    },
+    "fence": {
+        "raw_response": "A1: This object belongs to [structure].\nA2: This 'structure' is [boundary element].\nA3: This 'boundary element' 'structure' can be recognized as fence because it contains visual attributes: [linear arrangement, repetitive posts, horizontal or vertical slats, varied materials (wood, metal, etc.), often extends continuously along a perimeter].",
+        "general_category": "structure",
+        "sub_category": "boundary element",
+        "class_des": [
+            "linear arrangement",
+            "repetitive posts",
+            "horizontal or vertical slats",
+            "varied materials (wood",
+            "metal",
+            "etc.)",
+            "often extends continuously along a perimeter"
+        ]
+    },
+    "floor": {
+        "raw_response": "A1: This object belongs to [surface]. \nA2: This 'surface' is [ground-level surface]. \nA3: This 'ground-level surface' 'surface' can be recognized as floor because it contains visual attributes: [flat, continuous, solid, textured, often rectangular or square].",
+        "general_category": "surface",
+        "sub_category": "ground-level surface",
+        "class_des": [
+            "flat",
+            "continuous",
+            "solid",
+            "textured",
+            "often rectangular or square"
+        ]
+    },
+    "flower": {
+        "raw_response": "A1: This object belongs to [plant]. \nA2: This 'plant' is [flowering plant]. \nA3: This 'flowering plant' 'plant' can be recognized as flower because it contains visual attributes: [petals, stamens, pistils, sepals, colorful corolla].",
+        "general_category": "plant",
+        "sub_category": "flowering plant",
+        "class_des": [
+            "petals",
+            "stamens",
+            "pistils",
+            "sepals",
+            "colorful corolla"
+        ]
+    },
+    "food": {
+        "raw_response": "A1: This object belongs to [consumable items].\nA2: This 'consumable item' is [edible substance].\nA3: This 'edible substance' 'consumable item' can be recognized as food because it contains visual attributes: [color, shape, texture, size, presentation].",
+        "general_category": "consumable items",
+        "sub_category": "edible substance",
+        "class_des": [
+            "color",
+            "shape",
+            "texture",
+            "size",
+            "presentation"
+        ]
+    },
+    "grass": {
+        "raw_response": "A1: This object belongs to [vegetation].\nA2: This 'vegetation' is [ground cover].\nA3: This 'ground cover' 'vegetation' can be recognized as grass because it contains visual attributes: [green color, narrow blades, dense growth, uniform height, fine texture].",
+        "general_category": "vegetation",
+        "sub_category": "ground cover",
+        "class_des": [
+            "green color",
+            "narrow blades",
+            "dense growth",
+            "uniform height",
+            "fine texture"
+        ]
+    },
+    "ground": {
+        "raw_response": "A1: This object belongs to [terrain]. \nA2: This 'terrain' is [surface]. \nA3: This 'surface' 'terrain' can be recognized as ground because it contains visual attributes: [natural or artificial material, varied texture, often brown or green color, flat or slightly uneven shape, presence of small rocks or vegetation].",
+        "general_category": "terrain",
+        "sub_category": "surface",
+        "class_des": [
+            "natural or artificial material",
+            "varied texture",
+            "often brown or green color",
+            "flat or slightly uneven shape",
+            "presence of small rocks or vegetation"
+        ]
+    },
+    "horse": {
+        "raw_response": "A1: This object belongs to [animal].\nA2: This 'animal' is [mammal].\nA3: This 'mammal' 'animal' can be recognized as horse because it contains visual attributes: [long, slender legs, muscular build, flowing mane, distinctive head shape with a long face and large nostrils, typically brown or black coat color].",
+        "general_category": "animal",
+        "sub_category": "mammal",
+        "class_des": [
+            "long",
+            "slender legs",
+            "muscular build",
+            "flowing mane",
+            "distinctive head shape with a long face and large nostrils",
+            "typically brown or black coat color"
+        ]
+    },
+    "keyboard": {
+        "raw_response": "A1: This object belongs to [electronic devices]. \nA2: This 'electronic device' is [input device]. \nA3: This 'input device' 'electronic device' can be recognized as keyboard because it contains visual attributes: [rectangular shape, multiple small keys, flat surface, presence of alphanumeric characters, connection port or wireless indicator].",
+        "general_category": "electronic devices",
+        "sub_category": "input device",
+        "class_des": [
+            "rectangular shape",
+            "multiple small keys",
+            "flat surface",
+            "presence of alphanumeric characters",
+            "connection port or wireless indicator"
+        ]
+    },
+    "light": {
+        "raw_response": "A1: This object belongs to [fixtures and fittings]. \nA2: This 'fixtures and fittings' is [lighting fixture]. \nA3: This 'lighting fixture' 'fixtures and fittings' can be recognized as light because it contains visual attributes: [emits light, has a bulb or LED, often attached to ceiling or wall, has a switch, may have a decorative shade or cover].",
+        "general_category": "fixtures and fittings",
+        "sub_category": "lighting fixture",
+        "class_des": [
+            "emits light",
+            "has a bulb or LED",
+            "often attached to ceiling or wall",
+            "has a switch",
+            "may have a decorative shade or cover"
+        ]
+    },
+    "motorbike": {
+        "raw_response": "A1: This object belongs to [vehicle]. \nA2: This 'vehicle' is [two-wheeled motorized vehicle]. \nA3: This 'two-wheeled motorized vehicle' 'vehicle' can be recognized as motorbike because it contains visual attributes: [two wheels, engine, handlebars, seat for one or two people, exhaust pipe].",
+        "general_category": "vehicle",
+        "sub_category": "two-wheeled motorized vehicle",
+        "class_des": [
+            "two wheels",
+            "engine",
+            "handlebars",
+            "seat for one or two people",
+            "exhaust pipe"
+        ]
+    },
+    "mountain": {
+        "raw_response": "A1: This object belongs to [landscape]. \nA2: This 'landscape' is [natural formation]. \nA3: This 'natural formation' 'landscape' can be recognized as mountain because it contains visual attributes: [large elevation, rocky or snow-capped peaks, distinct ridges and valleys, varied vegetation patterns, shadowed slopes].",
+        "general_category": "landscape",
+        "sub_category": "natural formation",
+        "class_des": [
+            "large elevation",
+            "rocky or snow-capped peaks",
+            "distinct ridges and valleys",
+            "varied vegetation patterns",
+            "shadowed slopes"
+        ]
+    },
+    "mouse": {
+        "raw_response": "A1: This object belongs to [animal]. \nA2: This 'animal' is [rodent]. \nA3: This 'rodent' 'animal' can be recognized as mouse because it contains visual attributes: [small size, pointed snout, large ears relative to head size, long thin tail, fur typically gray or brown].",
+        "general_category": "animal",
+        "sub_category": "rodent",
+        "class_des": [
+            "small size",
+            "pointed snout",
+            "large ears relative to head size",
+            "long thin tail",
+            "fur typically gray or brown"
+        ]
+    },
+    "person": {
+        "raw_response": "A1: This object belongs to [living being]. \nA2: This 'living being' is [human]. \nA3: This 'human' 'living being' can be recognized as person because it contains visual attributes: [two legs, two arms, head with facial features, upright posture, varied clothing textures and colors].",
+        "general_category": "living being",
+        "sub_category": "human",
+        "class_des": [
+            "two legs",
+            "two arms",
+            "head with facial features",
+            "upright posture",
+            "varied clothing textures and colors"
+        ]
+    },
+    "plate": {
+        "raw_response": "A1: This object belongs to [kitchenware]. \nA2: This 'kitchenware' is [dining utensil]. \nA3: This 'dining utensil' 'kitchenware' can be recognized as plate because it contains visual attributes: [circular shape, flat surface, smooth texture, typically white or light-colored, may have decorative patterns].",
+        "general_category": "kitchenware",
+        "sub_category": "dining utensil",
+        "class_des": [
+            "circular shape",
+            "flat surface",
+            "smooth texture",
+            "typically white or light-colored",
+            "may have decorative patterns"
+        ]
+    },
+    "platform": {
+        "raw_response": "A1: This object belongs to [structure].\nA2: This 'structure' is [elevated surface].\nA3: This 'elevated surface' 'structure' can be recognized as platform because it contains visual attributes: [flat surface, raised elevation, stable base, horizontal orientation, lack of enclosing sides].",
+        "general_category": "structure",
+        "sub_category": "elevated surface",
+        "class_des": [
+            "flat surface",
+            "raised elevation",
+            "stable base",
+            "horizontal orientation",
+            "lack of enclosing sides"
+        ]
+    },
+    "pottedplant": {
+        "raw_response": "A1: This object belongs to [plants and flowers].\nA2: This 'plants and flowers' is [decorative plant].\nA3: This 'decorative plant' 'plants and flowers' can be recognized as pottedplant because it contains visual attributes: [container presence, soil visibility, leaf shape, stem structure, overall plant size].",
+        "general_category": "plants and flowers",
+        "sub_category": "decorative plant",
+        "class_des": [
+            "container presence",
+            "soil visibility",
+            "leaf shape",
+            "stem structure",
+            "overall plant size"
+        ]
+    },
+    "road": {
+        "raw_response": "A1: This object belongs to [infrastructure]. \nA2: This 'infrastructure' is [transportation surface]. \nA3: This 'transportation surface' 'infrastructure' can be recognized as road because it contains visual attributes: [paved surface, linear structure, lane markings, traffic flow, surrounding environment].",
+        "general_category": "infrastructure",
+        "sub_category": "transportation surface",
+        "class_des": [
+            "paved surface",
+            "linear structure",
+            "lane markings",
+            "traffic flow",
+            "surrounding environment"
+        ]
+    },
+    "rock": {
+        "raw_response": "A1: This object belongs to [natural objects]. \nA2: This 'natural object' is [geological formation]. \nA3: This 'geological formation' 'natural object' can be recognized as rock because it contains visual attributes: [hard surface, varied texture, irregular shape, natural colors, mineral composition].",
+        "general_category": "natural objects",
+        "sub_category": "geological formation",
+        "class_des": [
+            "hard surface",
+            "varied texture",
+            "irregular shape",
+            "natural colors",
+            "mineral composition"
+        ]
+    },
+    "sheep": {
+        "raw_response": "A1: This object belongs to [animal].\nA2: This 'animal' is [mammal].\nA3: This 'mammal' 'animal' can be recognized as sheep because it contains visual attributes: [white or light-colored wool, stocky body, curved horns, black nose and eyes, four sturdy legs].",
+        "general_category": "animal",
+        "sub_category": "mammal",
+        "class_des": [
+            "white or light-colored wool",
+            "stocky body",
+            "curved horns",
+            "black nose and eyes",
+            "four sturdy legs"
+        ]
+    },
+    "shelves": {
+        "raw_response": "A1: This object belongs to [furniture]. \nA2: This 'furniture' is [storage item]. \nA3: This 'storage item' 'furniture' can be recognized as shelves because it contains visual attributes: [multiple horizontal or vertical slats, open compartments, rectangular structure, wall-mounted or freestanding, varied material textures].",
+        "general_category": "furniture",
+        "sub_category": "storage item",
+        "class_des": [
+            "multiple horizontal or vertical slats",
+            "open compartments",
+            "rectangular structure",
+            "wall-mounted or freestanding",
+            "varied material textures"
+        ]
+    },
+    "sidewalk": {
+        "raw_response": "A1: This object belongs to [urban infrastructure]. \nA2: This 'urban infrastructure' is [pavement feature]. \nA3: This 'pavement feature' 'urban infrastructure' can be recognized as sidewalk because it contains visual attributes: [rectangular shape, flat surface, repetitive pattern, often gray or light-colored, adjacent to buildings or roads].",
+        "general_category": "urban infrastructure",
+        "sub_category": "pavement feature",
+        "class_des": [
+            "rectangular shape",
+            "flat surface",
+            "repetitive pattern",
+            "often gray or light-colored",
+            "adjacent to buildings or roads"
+        ]
+    },
+    "sign": {
+        "raw_response": "A1: This object belongs to [communication devices or tools].\nA2: This 'communication device or tool' is [visual communication].\nA3: This 'visual communication' 'communication device or tool' can be recognized as sign because it contains visual attributes: [rectangular or irregular shape, bold text or symbols, high contrast colors, flat surface, often mounted or hung].",
+        "general_category": "communication devices or tools",
+        "sub_category": "visual communication",
+        "class_des": [
+            "rectangular or irregular shape",
+            "bold text or symbols",
+            "high contrast colors",
+            "flat surface",
+            "often mounted or hung"
+        ]
+    },
+    "sky": {
+        "raw_response": "A1: This object belongs to [natural elements]. \nA2: This 'natural element' is [atmospheric feature]. \nA3: This 'atmospheric feature' 'natural element' can be recognized as sky because it contains visual attributes: [vast expanse, gradient colors, presence of clouds, absence of solid form, reflective of weather conditions].",
+        "general_category": "natural elements",
+        "sub_category": "atmospheric feature",
+        "class_des": [
+            "vast expanse",
+            "gradient colors",
+            "presence of clouds",
+            "absence of solid form",
+            "reflective of weather conditions"
+        ]
+    },
+    "snow": {
+        "raw_response": "A1: This object belongs to [natural elements]. \nA2: This 'natural elements' is [precipitation]. \nA3: This 'precipitation' 'natural elements' can be recognized as snow because it contains visual attributes: [white color, fluffy texture, reflective surface, hexagonal crystal structure, accumulation on surfaces].",
+        "general_category": "natural elements",
+        "sub_category": "precipitation",
+        "class_des": [
+            "white color",
+            "fluffy texture",
+            "reflective surface",
+            "hexagonal crystal structure",
+            "accumulation on surfaces"
+        ]
+    },
+    "sofa": {
+        "raw_response": "A1: This object belongs to [furniture]. \nA2: This 'furniture' is [seating item]. \nA3: This 'seating item' 'furniture' can be recognized as sofa because it contains visual attributes: [large size, long and wide seat, backrest, armrests, cushioned surface].",
+        "general_category": "furniture",
+        "sub_category": "seating item",
+        "class_des": [
+            "large size",
+            "long and wide seat",
+            "backrest",
+            "armrests",
+            "cushioned surface"
+        ]
+    },
+    "diningtable": {
+        "raw_response": "A1: This object belongs to [furniture]. \nA2: This 'furniture' is [table]. \nA3: This 'table' 'furniture' can be recognized as diningtable because it contains visual attributes: [large rectangular or round surface, multiple legs, often paired with chairs, typically found in dining rooms, used for meals and gatherings].",
+        "general_category": "furniture",
+        "sub_category": "table",
+        "class_des": [
+            "large rectangular or round surface",
+            "multiple legs",
+            "often paired with chairs",
+            "typically found in dining rooms",
+            "used for meals and gatherings"
+        ]
+    },
+    "track": {
+        "raw_response": "A1: This object belongs to [transport infrastructure]. \nA2: This 'transport infrastructure' is [railway component]. \nA3: This 'railway component' 'transport infrastructure' can be recognized as track because it contains visual attributes: [metallic surface, parallel lines, consistent width, embedded in ground, connected by sleepers].",
+        "general_category": "transport infrastructure",
+        "sub_category": "railway component",
+        "class_des": [
+            "metallic surface",
+            "parallel lines",
+            "consistent width",
+            "embedded in ground",
+            "connected by sleepers"
+        ]
+    },
+    "train": {
+        "raw_response": "A1: This object belongs to [vehicle].\nA2: This 'vehicle' is [railway vehicle].\nA3: This 'railway vehicle' can be recognized as train because it contains visual attributes: [elongated shape, multiple connected carriages, tracks, locomotive at the front, enclosed passenger compartments].",
+        "general_category": "vehicle",
+        "sub_category": "railway vehicle",
+        "class_des": [
+            "elongated shape",
+            "multiple connected carriages",
+            "tracks",
+            "locomotive at the front",
+            "enclosed passenger compartments"
+        ]
+    },
+    "tree": {
+        "raw_response": "A1: This object belongs to [plant]. \nA2: This 'plant' is [perennial plant]. \nA3: This 'perennial plant' 'plant' can be recognized as tree because it contains visual attributes: [trunk, branches, leaves, height, canopy].",
+        "general_category": "plant",
+        "sub_category": "perennial plant",
+        "class_des": [
+            "trunk",
+            "branches",
+            "leaves",
+            "height",
+            "canopy"
+        ]
+    },
+    "truck": {
+        "raw_response": "A1: This object belongs to [vehicle].\nA2: This 'vehicle' is [ground transportation].\nA3: This 'ground transportation' 'vehicle' can be recognized as truck because it contains visual attributes: [large size, rectangular shape, multiple axles, cargo bed, robust tires].",
+        "general_category": "vehicle",
+        "sub_category": "ground transportation",
+        "class_des": [
+            "large size",
+            "rectangular shape",
+            "multiple axles",
+            "cargo bed",
+            "robust tires"
+        ]
+    },
+    "tvmonitor": {
+        "raw_response": "A1: This object belongs to [electronics]. \nA2: This 'electronics' is [display device]. \nA3: This 'display device' 'electronics' can be recognized as tvmonitor because it contains visual attributes: [rectangular screen, flat surface, presence of bezel, stand or base support, control buttons or panel].",
+        "general_category": "electronics",
+        "sub_category": "display device",
+        "class_des": [
+            "rectangular screen",
+            "flat surface",
+            "presence of bezel",
+            "stand or base support",
+            "control buttons or panel"
+        ]
+    },
+    "wall": {
+        "raw_response": "A1: This object belongs to [architecture]. \nA2: This 'architecture' is [structural element]. \nA3: This 'structural element' 'architecture' can be recognized as wall because it contains visual attributes: [flat surface, vertical orientation, continuous structure, solid material, uniform texture].",
+        "general_category": "architecture",
+        "sub_category": "structural element",
+        "class_des": [
+            "flat surface",
+            "vertical orientation",
+            "continuous structure",
+            "solid material",
+            "uniform texture"
+        ]
+    },
+    "water": {
+        "raw_response": "A1: This object belongs to [natural elements]. \nA2: This 'natural element' is [liquid]. \nA3: This 'liquid' 'natural element' can be recognized as water because it contains visual attributes: [blue or clear color, smooth surface, reflective properties, ability to form waves or ripples, transparent appearance].",
+        "general_category": "natural elements",
+        "sub_category": "liquid",
+        "class_des": [
+            "blue or clear color",
+            "smooth surface",
+            "reflective properties",
+            "ability to form waves or ripples",
+            "transparent appearance"
+        ]
+    },
+    "window": {
+        "raw_response": "A1: This object belongs to [building elements]. \nA2: This 'building element' is [opening]. \nA3: This 'opening' 'building element' can be recognized as window because it contains visual attributes: [rectangular or square shape, transparent or translucent material, presence of a frame, often set in walls, may have visible dividers or mullions].",
+        "general_category": "building elements",
+        "sub_category": "opening",
+        "class_des": [
+            "rectangular or square shape",
+            "transparent or translucent material",
+            "presence of a frame",
+            "often set in walls",
+            "may have visible dividers or mullions"
+        ]
+    },
+    "wood": {
+        "raw_response": "A1: This object belongs to [natural materials].\nA2: This 'natural material' is [plant-based material].\nA3: This 'plant-based material' 'natural material' can be recognized as wood because it contains visual attributes: [brown color, grainy texture, smooth or rough surface, varying density, natural knots or rings].",
+        "general_category": "natural materials",
+        "sub_category": "plant-based material",
+        "class_des": [
+            "brown color",
+            "grainy texture",
+            "smooth or rough surface",
+            "varying density",
+            "natural knots or rings"
+        ]
+    }
+}
