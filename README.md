@@ -43,13 +43,16 @@ For ```OpenSeg-R w MAFT+```, we follow all setting in [MAFT+](https://github.com
 <span id="2"></span>
 
 ### Data Preparation
-First, generate the image-specific reasons and generic class reasoning using [Qwen2.5-VL-72B-Instruct-AWQ](https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct-AWQ), and save them in ```./reason_data/image_reason``` and ```./reason_data/generic_reason``` respectively. 
-We also recommend extracting the text features of the image-specific reasons in advance for faster evaluation. These features could be saved in ```./reason_data/image_reason_feat```.  
-Here we provide the reasoning results for [PC59](to_be_updated), and we will release the reasoning results for other datasets, along with the reasoning processing code, in the future.
+Firstly, download the [Qwen2.5-VL-72B-Instruct-AWQ](https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct-AWQ) and save them in ```./llm``` with the following command:
+```
+mkdir llm
+cd llm
+git lfs install
+git clone https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct-AWQ
+```
+Next, generate the image-specific reasons and generic class reasoning using [Qwen2.5-VL-72B-Instruct-AWQ](https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct-AWQ), and save them in ```./reason_data/image_reason``` and ```./reason_data/generic_reason``` respectively. We also recommend extracting the text features of the image-specific reasons in advance for faster evaluation. These features could be saved in ```./reason_data/image_reason_feat```. Here we provide the reasoning results for [PC59](to_be_updated), and we will release the reasoning results for other datasets, along with the reasoning processing code, in the future.
 
-Then, refer to [MAFT+](https://github.com/jiaosiyu1999/MAFT-Plus) for dataset preparation and organization.  
-
-The data structure is similar to that of MAFT, with some modifications to accommodate the new dataset format and reasoning method.
+Then, refer to [MAFT+](https://github.com/jiaosiyu1999/MAFT-Plus) for dataset preparation and organization. The data structure is similar to that of MAFT, with some modifications to accommodate the new dataset format and reasoning method.
 
 ```
 reason_data/
