@@ -11,20 +11,20 @@ Segmentation via Step-by-Step Visual Reasoning</h3>
 
 <sup>1</sup> Mohamed Bin Zayed University of Artificial Intelligence (MBZUAI), <sup>2</sup> Tianjin University, <sup>3</sup> Nanjing University, <sup>4</sup> Aalto University
 
+[[`Paper`](https://arxiv.org/pdf/2505.16974)] 
 </div>
+
 
 ## Introduction
 Open-Vocabulary Segmentation (OVS) has drawn increasing attention for its capacity to generalize segmentation beyond predefined categories. However, existing methods typically predict segmentation masks with simple forward inference, lacking explicit reasoning and interpretability.  This makes it challenging for OVS model to distinguish similar categories in open-world settings due to the lack of contextual understanding and discriminative visual cues. To address this limitation, we propose a step-by-step visual reasoning framework for open-vocabulary segmentation, named **OpenSeg-R**. The proposed OpenSeg-R leverages Large Multimodal Models (LMMs) to perform hierarchical visual reasoning before segmentation.  Specifically, we generate both generic and image-specific reasoning for each image, forming structured triplets that explain the visual reason for objects in a coarse-to-fine manner. Based on these reasoning steps, we can compose detailed description prompts, and feed them to the segmentor to produce more accurate segmentation masks. To the best of our knowledge, OpenSeg-R is the first framework to introduce explicit step-by-step visual reasoning into OVS. Experimental results demonstrate that OpenSeg-R significantly outperforms state-of-the-art methods on open-vocabulary semantic segmentation across five benchmark datasets. Moreover, it achieves consistent gains across all metrics on open-vocabulary panoptic segmentation. Qualitative results further highlight the effectiveness of our reasoning-guided framework in improving both segmentation precision and interpretability.
 
 ![](figures/framework.png)
 
-
-
 ## Experiment
 We utilize both [MAFT+](https://github.com/jiaosiyu1999/MAFT-Plus) and [SED](https://github.com/xb534/SED) as open-vocabulary segmentation for our framework.
 Here we provide the instructions for reproducing our results with MAFT+. We will release the code for SED in the future.
 For ```OpenSeg-R w MAFT+```, we follow all setting in [MAFT+](https://github.com/jiaosiyu1999/MAFT-Plus) as below:
-### Installation
+- ### Installation
 1. Clone the repository
     ```
     git clone https://github.com/Hanzy1996/OpenSeg-R.git
@@ -42,7 +42,7 @@ For ```OpenSeg-R w MAFT+```, we follow all setting in [MAFT+](https://github.com
 
 <span id="2"></span>
 
-### Data Preparation
+- ### Data Preparation
 Firstly, download the [Qwen2.5-VL-72B-Instruct-AWQ](https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct-AWQ) and save them in ```./llm``` with the following command:
 ```
 mkdir llm
@@ -92,7 +92,7 @@ datasets/
 ```
 <span id="3"></span>
 
-- #### Evaluation
+- ### Evaluation
   <span id="4"></span>
   First, download the pre-trained model from [MAFT+](https://github.com/jiaosiyu1999/MAFT-Plus) and saved them into ```./pretrained```.
   Then, evaluate ```OpenSeg-R with MAFT+``` using the following command on validation sets of other datasets.
@@ -101,11 +101,32 @@ datasets/
   sh eval_reason_large.sh
   sh eval_reason_pano.sh
   ```
+- ### Results
+  The results of OpenSeg-R with MAFT+ on different datasets are shown below. We will release the results of OpenSeg-R with SED in the future.
+
+
+| Method                   | VLM         | A-847 | PC-459 | A-150 | PC-59 | PAS-20 |
+|--------------------------|-------------|-------|--------|-------|-------|--------|
+| **OpenSeg-R** w SED      | ConvNeXt-B  | 11.8 | 18.9 | 33.6 | 59.0 | 95.1 |
+| **OpenSeg-R** w MAFT+    | ConvNeXt-B  | 15.2 | 15.5 | 35.5 | 59.0 | 96.1 |
+| **OpenSeg-R** w SED      | ConvNeXt-L  | 14.3 | 22.0 | 36.1 | 61.2 | 96.3 |
+| **OpenSeg-R** w MAFT+    | ConvNeXt-L  | 16.8 | 17.1 | 37.1 | 60.3 | 96.2 |
+
+
+
+![](figures/semantic_visual.png)
+
 <span id="5"></span>
 ### Cite 
 
 If this codebase is useful to you, please consider citing:
 ```
+@article{han2025opensegr,
+  title={OpenSeg-R: Improving Open-Vocabulary Segmentation via Step-by-Step Visual Reasoning},
+  author={Zongyan Han, Jiale Cao, Shuo Chen, Tong Wang, Jorma Laaksonen, Rao Muhammad Anwer},
+  journal={arXiv preprint arXiv:2505.16974},
+  year={2025}
+}
 ```
 ### Acknowledgement
 [MAFT+](https://github.com/jiaosiyu1999/MAFT-Plus)
