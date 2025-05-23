@@ -102,7 +102,7 @@ datasets/
   sh eval_reason_pano.sh
   ```
 - ### Results
-  The results of OpenSeg-R with MAFT+ on different datasets are shown below. We will release the results of OpenSeg-R with SED in the future.
+  The results of OpenSeg-R on different datasets are shown below. 
 
 
 | Method                   | VLM         | A-847 | PC-459 | A-150 | PC-59 | PAS-20 |
